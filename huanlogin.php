@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<?php 
+<?php
+	session_start();	 
 	$username = isset($_POST['uname']) ? $_POST['uname'] : "";
 	$password = isset($_POST['psw']) ? $_POST['psw'] : "";
-	if ($username == "hoanganh" && $password == "123456") {
+	if ($username == "buihuan" && $password == "hihihaha") {
+		$_SESSION['username'] = $username;
+		$_SESSION['pass'] = $password;
 		header('Location: huandemo.php');
 	}
 ?>
@@ -14,17 +17,17 @@
 
 	<body>
 		
-		<form action="index.php" method="post">
+		<form action="huanlogin.php" method="post">
 		  <div class="imgcontainer">
 		    
 		  </div>
 
 		  <div class="container">
 		    <label for="uname"><b>Username</b></label>
-		    <input type="text" placeholder="Enter Username" name="uname" value="<?php echo $username ?>" required>
+		    <input type="text" placeholder="Enter Username" name="uname" required>
 
 		    <label for="psw"><b>Password</b></label>
-		    <input type="password" placeholder="Enter Password" name="psw" value="<?php echo $password ?>" required>
+		    <input type="password" placeholder="Enter Password" name="psw" required>
 
 		    <button type="submit" class="btn_login">Login</button>
 		    

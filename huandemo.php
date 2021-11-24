@@ -2,6 +2,9 @@
 <html>
 <?php 
     session_start();
+    if (!isset($_SESSION['username']) || !isset($_SESSION['pass'])) {
+        header("Location: huanlogin.php");
+    }
     $searchVal = isset($_GET['search']) ? $_GET['search'] : "";
     $searchVal = str_replace("'", "[remove]", $searchVal);
     //$searchVal = str_replace('"', "[remove]", $searchVal);
@@ -57,8 +60,10 @@ form.example::after {
 </head>
 <body>
 
-<h2>Huan demo</h2>
-
+<h2>Huan demo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="logout.php"><button>logout</button></a></span></h2>
+<p>Xin chao buihuan</p>
+<p>Gmail: buihuanhihihaha@gmail.com</p>
+<p>Sdt: 012342349234</p>
 
 
 
