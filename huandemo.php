@@ -9,6 +9,7 @@
     $searchVal = str_replace("+", "[remove]", $searchVal);
     $searchVal = str_replace("<", "[remove]", $searchVal);
     $searchVal = str_replace(">", "[remove]", $searchVal);
+    $searchVal = strip_tags($searchVal);
 ?>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
