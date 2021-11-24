@@ -3,7 +3,12 @@
 	session_start();	 
 	$username = isset($_POST['uname']) ? $_POST['uname'] : "";
 	$password = isset($_POST['psw']) ? $_POST['psw'] : "";
-	if ($username == "buihuan" && $password == "hihihaha") {
+	if (($username == "buihuan" && $password == "hihihaha")) {
+		$_SESSION['username'] = $username;
+		$_SESSION['pass'] = $password;
+		header('Location: huandemo.php');
+	}
+	else if (($username == "huan" && $password == "123")) {
 		$_SESSION['username'] = $username;
 		$_SESSION['pass'] = $password;
 		header('Location: huandemo.php');
