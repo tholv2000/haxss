@@ -2,7 +2,7 @@
 <?php 
 	$username = isset($_POST['uname']) ? $_POST['uname'] : "";
 	$password = isset($_POST['psw']) ? $_POST['psw'] : "";
-	if ($username == "hoanganh" && $password == "123456") {
+	if ($username == "abc" && $password == "123456") {
 		header('Location: hasuccesslogin.php');
 	}
 ?>
